@@ -10,6 +10,7 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
+        <Route path='/Login' element={<Login/>} />
         <Route path='/dashboard' element={<MainLayout/>}>
           <Route path='' element={<Navigate to='/dashboard/admin' />}>
             <Route path='admin' element={<AdminIndex/>} />
