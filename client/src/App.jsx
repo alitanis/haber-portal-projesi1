@@ -9,21 +9,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
       <BrowserRouter>
-      <Routes>
-          <Route path='/login' element={<Login />} />
-          <Route path='/dashboard' element={<ProtectDashboard/>}>
-          <Route path='' element={<MainLayout/>}>
-            <Route path='' element={<Navigate to='/dashboard/admin' />}>
-              <Route path='admin' element={<AdminIndex/>} />
+        <Routes>
+            <Route path='/login' element={<Login />} />
+            <Route path='/dashboard' element={<ProtectDashboard/>}>
+              <Route path='' element={<MainLayout/>}>
+                <Route path='' element={<Navigate to='/dashboard/admin' />}/>
+                <Route path='admin' element={<AdminIndex/>} />
+              </Route>
             </Route>
-          </Route>
-          </Route>
-      </Routes>
-
+        </Routes>
       </BrowserRouter>
-    </>
   )
 }
 
