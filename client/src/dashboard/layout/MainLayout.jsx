@@ -7,9 +7,14 @@ const MainLayout = () => {
     <div className='min-w-screen min-h-screen bg-slate-100'>
         <Sidebar />
         <div className='ml-[250px] w-[calc(100vw-250px) min-h-[vh]]'>
-          <Header/>
+            <Header/>
+            <div className='p-4'>
+                <div className='pt-[85px]'>
+                  <Outlet/>
+                </div>
+            </div>
         </div>
-        <Outlet/>
+        
     </div>
   )
 }
