@@ -6,6 +6,10 @@ import Login from './dashboard/pages/Login'
 import ProtectDashboard from './dashboard/middleware/ProtectDashboard'
 import ProtectRole from './dashboard/middleware/ProtectRole'
 import Unable from './dashboard/pages/Unable'
+import AddWriters from './dashboard/pages/AddWriters'
+import Writers from './dashboard/pages/Writers'
+import AddWriter from './dashboard/pages/AddWriter'
+import News from './dashboard/pages/News'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,8 +22,11 @@ function App() {
               <Route path='' element={<MainLayout/>}>
                 <Route path='' element={<Navigate to='/dashboard/admin' />}/>
                 <Route path='unable-access' element={<Unable/>}/>
+                <Route path='News' element={<News/>} />
                 <Route path='' element={<ProtectRole role='admin'/>}>
                   <Route path='admin' element={<AdminIndex/>} />
+                  <Route path='/writer/add' element={<AddWriter/>} />
+                  <Route path='writers' element={<Writers/>} />
                 </Route>
               </Route>
             </Route>
