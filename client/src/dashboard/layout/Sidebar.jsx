@@ -24,19 +24,19 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/dashboard/haberler' className={`px-3 ${pathname === '/dashboard/haberler'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+            <Link to='/dashboard/news' className={`px-3 ${pathname === '/dashboard/news'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
               <span className='text-xl' ><BiNews /></span>
               <span>Haberler</span>
             </Link>
           </li>
           <li>
-            <Link to='/dashboard/yazar/ekle' className={`px-3 ${pathname === 'dashboard/writer/ekle'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+            <Link to='/dashboard/writer/add' className={`px-3 ${pathname === 'dashboard/writer/add'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
               <span className='text-xl' ><AiOutlinePlus/></span>
               <span>Yazar Ekle</span>
             </Link>
           </li>
           <li>
-            <Link to='/dashboard/yazarlar' className={`px-3 ${pathname === '/dashboard/yazarlar'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+            <Link to='/dashboard/writers' className={`px-3 ${pathname === '/dashboard/writers'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
               <span className='text-xl' ><FiUsers/></span>
               <span>Yazarlar</span>
             </Link>

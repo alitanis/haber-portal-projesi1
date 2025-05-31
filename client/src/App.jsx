@@ -3,8 +3,8 @@ import {BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import MainLayout from './dashboard/layout/MainLayout'
 import AdminIndex from './dashboard/pages/AdminIndex'
 import Login from './dashboard/pages/Login'
-import ProtectDashboard from './dashboard/middleware/ProtectDashboard'
-import ProtectRole from './dashboard/middleware/ProtectRole'
+import ProtectDashboard from './middleware/ProtectDashboard'
+import ProtectRole from './middleware/ProtectRole'
 import Unable from './dashboard/pages/Unable'
 import Writers from './dashboard/pages/Writers'
 import AddWriter from './dashboard/pages/AddWriter'
@@ -21,7 +21,7 @@ function App() {
                 <Route path='News' element={<News/>} />
                 <Route path='' element={<ProtectRole role='admin'/>}>
                   <Route path='admin' element={<AdminIndex/>} />
-                  <Route path='/writer/add' element={<AddWriter/>} />
+                  <Route path='writer/add' element={<AddWriter/>} />
                   <Route path='writers' element={<Writers/>} />
                 </Route>
               </Route>
