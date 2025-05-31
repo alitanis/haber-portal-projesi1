@@ -9,10 +9,7 @@ import Unable from './dashboard/pages/Unable'
 import Writers from './dashboard/pages/Writers'
 import AddWriter from './dashboard/pages/AddWriter'
 import News from './dashboard/pages/News'
-
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
       <BrowserRouter>
         <Routes>
