@@ -30,7 +30,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/dashboard/writer/add' className={`px-3 ${pathname === 'dashboard/writer/add'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+            <Link to='/dashboard/writer/add' className={`px-3 ${pathname === '/dashboard/writer/add'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
               <span className='text-xl' ><AiOutlinePlus/></span>
               <span>Yazar Ekle</span>
             </Link>
@@ -45,12 +45,6 @@ const Sidebar = () => {
             <Link to='/dashboard/profil' className={`px-3 ${pathname === '/dashboard/profil'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
               <span className='text-xl' ><ImProfile/></span>
               <span>Profil</span>
-            </Link>
-          </li>
-          <li>
-            <Link to='/dashboard/admin' className={`px-3 ${pathname === '/dashboard/admin'?'bg-indigo-500 text-white':'bg-white text-[#4040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
-              <span className='text-xl' ><AiFillDashboard/></span>
-              <span>Dashboard</span>
             </Link>
           </li>
         </ul>
