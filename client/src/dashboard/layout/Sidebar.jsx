@@ -42,7 +42,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to='/dashboard/profil' className={`px-3 ${pathname === '/dashboard/profil'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
+            <Link to='/dashboard/profile' className={`px-3 ${pathname === '/dashboard/profile'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
               <span className='text-xl' ><ImProfile/></span>
               <span>Profil</span>
             </Link>

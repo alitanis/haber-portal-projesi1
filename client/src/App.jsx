@@ -21,7 +21,7 @@ function App() {
                 <Route path='' element={<Navigate to='/dashboard/admin' />}/>
                 <Route path='unable-access' element={<Unable/>}/>
                 <Route path='news' element={<News/>} />
-                <Route path='profile' element={<Profile/>} />
+                <Route path='profile' element={<Profile />} />
                 <Route path='' element={<ProtectRole role='admin'/>}>
                   <Route path='admin' element={<AdminIndex/>} />
                   <Route path='writer/add' element={<AddWriter/>} />
