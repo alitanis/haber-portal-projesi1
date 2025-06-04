@@ -5,13 +5,13 @@ const ProtectDashboard = () => {
 
   const userInfo = {
     name : "ali",
-    role : "writer"
+    role : "admin"
   }
 
-  if(userInfo.role === role){
+  if(userInfo){
     return <Outlet />
   } else {
-    return <Navigate to={'/login'} />
+    return <Navigate to={'/dashboard/unable-access'} />
   }
 
 }

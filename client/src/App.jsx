@@ -23,8 +23,8 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route path='/login' element={<Login />} />
-            <Route path='/dashboard' element={<ProtectDashboard/>}>
-              <Route path='' element={<MainLayout/>}>
+            <Route path='/dashboard' element={<ProtectDashboard role={userInfo.role}/>}>
+              <Route path='' element={<MainLayout />}>
                 <Route path='' element={userInfo.role === 'admin' ? <Navigate to='/dashboard/admin'/> : <Navigate to='/dashboard/writer'/> }/>
                 <Route path='unable-access' element={<Unable/>}/>
                 <Route path='news' element={<News/>} />
