@@ -6,9 +6,12 @@ import {BiNews} from "react-icons/bi";
 import {FiUsers} from "react-icons/fi";
 const Sidebar = () => {
 
+  const {pathname} = useLocation()
 
+  const userInfo = {
+    role : "writer"
+  }
 
-  const {pathname} = useLocation()  
   return (
     <div className='w-[250px] h-screen fixed left-0 top-0 bg-white'>
         <div className='h-[70px] flex justify-center items-center'>
@@ -17,6 +20,10 @@ const Sidebar = () => {
             </Link>
         </div>
         <ul className='px-3 flex flex-col gap-y-1 font-large text-xl' >
+          {
+            userInfo.role === 'admin' ? <>
+            </>:<></>
+          }
           <li>
             <Link to='/dashboard/admin' className={`px-3 ${pathname === '/dashboard/admin'?'bg-indigo-500 text-white':'bg-white text-[#404040f6]'} py-2 hover:shadow-1g hover:shadow-indigo-500/20 w-full rounded-sm flex gap-x-2 justify-start items-center hover:bg-indigo-500 hover:text-white`}>
               <span className='text-xl' ><AiFillDashboard/></span>
