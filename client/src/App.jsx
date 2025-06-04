@@ -9,6 +9,8 @@ import Unable from './dashboard/pages/Unable'
 import Writers from './dashboard/pages/Writers'
 import AddWriter from './dashboard/pages/AddWriter'
 import News from './dashboard/pages/News'
+import Profile from './dashboard/pages/Profile'
+
 function App() {
   return (
       <BrowserRouter>
@@ -19,6 +21,7 @@ function App() {
                 <Route path='' element={<Navigate to='/dashboard/admin' />}/>
                 <Route path='unable-access' element={<Unable/>}/>
                 <Route path='news' element={<News/>} />
+                <Route path='profile' element={<Profile/>} />
                 <Route path='' element={<ProtectRole role='admin'/>}>
                   <Route path='admin' element={<AdminIndex/>} />
                   <Route path='writer/add' element={<AddWriter/>} />
