@@ -5,10 +5,10 @@ const ProtectDashboard = () => {
 
   const userInfo = {
     name : "ali",
-    role : "admin"
+    role : "writer"
   }
 
-  if(userInfo){
+  if(userInfo.role === role){
     return <Outlet />
   } else {
     return <Navigate to={'/login'} />
