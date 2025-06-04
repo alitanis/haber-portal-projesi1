@@ -9,7 +9,7 @@ const Profile = () => {
           <label htmlFor="img" className={`w-[150px] h-[150px] flex rounded text-[#404040] gap-2 justify-center items-center cursor-pointer border-2 border-dashed`}>
             <div className='flex justify-center items-center flex-col gap-y-2'>
               <span className='text-2xl'><FaImage/></span>
-              <span>Select Image</span>
+              <span>Resim Seç</span>
             </div>
           </label>
           <input className='hidden' type="file" id="img" />
