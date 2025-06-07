@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const db_conect = async () => {
+const db_connect = async () => {
     try {
         if (process.env.mode === 'production') {
             await mongoose.connect(process.env.db_production_url)
@@ -13,3 +13,5 @@ const db_conect = async () => {
         console.log(error)
     }
 }
+
+module.exports = db_connect
