@@ -10,7 +10,7 @@ const Sidebar = () => {
   const {pathname} = useLocation()
 
   const userInfo = {
-    role : "writer"
+    role : "admin"
   }
 
   return (

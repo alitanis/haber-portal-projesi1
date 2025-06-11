@@ -3,8 +3,8 @@ import {Outlet, Navigate} from 'react-router-dom'
 const ProtectRole = ({role}) => {
 
   const userInfo = {
-    name : "ali",
-    role : "writer"
+    name : "Seyit Ali Tanış",
+    role : "admin"
   }
 
   if(userInfo.role === role ){

@@ -4,7 +4,7 @@ import { Outlet, Navigate } from 'react-router-dom'
 const ProtectDashboard = () => {
 
   const userInfo = {
-    name : "ali",
+    name : "Seyit Ali Tanış",
     role : "admin"
   }
 
